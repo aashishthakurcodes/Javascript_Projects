@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatior</title>
+</head>
+<body>
+    <form class="calculator_form" name="calculator_form"> 
+            <div class="screen" >
+        <input type="text" name="screen">
+    </div>
+
+    <div>
+        <input type="text" onclick="Clear()" readonly value="Clear">
+    </div>
+
+    <div class="btn">
+       <input type="text" value="1" readonly onclick="valuebtn(this)">
+       <input type="text" value="2" readonly onclick="valuebtn(this)">
+       <input type="text" value="3" readonly onclick="valuebtn(this)">
+       <input type="text" value="4" readonly onclick="valuebtn(this)">
+       <input type="text" value="5" readonly onclick="valuebtn(this)">
+       <input type="text" value="6" readonly onclick="valuebtn(this)">
+       <input type="text" value="7" readonly onclick="valuebtn(this)">
+       <input type="text" value="8" readonly onclick="valuebtn(this)">
+       <input type="text" value="9" readonly onclick="valuebtn(this)">
+       <input type="text" value="+" readonly onclick="valuebtn(this)">
+       <input type="text" value="/" readonly onclick="valuebtn(this)">
+       <input type="text" value="-" readonly onclick="valuebtn(this)">
+       <input type="text" value="*" readonly onclick="valuebtn(this)">
+       <input type="text" value="Equal" readonly onclick="calculate(this)">
+    </div>
+</form>
+<script src="./script.js"></script>
+</body>
+</html>
