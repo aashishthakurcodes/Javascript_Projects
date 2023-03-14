@@ -1,4 +1,4 @@
-// Function to push user data into main input
+// Function to push user data into main input tag 
 function valuebtn(e) {
   calculator_form.screen.value += e.value;
   console.log("hello");
