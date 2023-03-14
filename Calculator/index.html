@@ -6,26 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculatior</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Main div -->
     <div class="main">
         <h1 class="heading1" style="color: aliceblue;">Lets Calculate</h1>
         <div class="container">
-
+            
+            <!-- Input  -->
             <form class="calculator_form" name="calculator_form">
                 <div class="screen5">
                     <input type="text" id="input_data" name="screen" value="">
             </form>
             <hr>
-           
+
+            <!-- Button -->
             <div class="btn">
                 <input type="text" id="clear" onclick="Clear()" readonly value="AC">
                 <input type="text" id="equal" value="=" readonly onclick="calculate(this)">
                 <input type="text" id="percentage" value="%" readonly onclick="valuebtn(this)">
                 <input type="text" id="divide" value="/" readonly onclick="valuebtn(this)">
-    
+
             </div>
 
             <div class="btn">
@@ -33,7 +36,7 @@
                 <input type="text" value="8" readonly onclick="valuebtn(this)">
                 <input type="text" value="9" readonly onclick="valuebtn(this)">
                 <input type="text" id="multiply" value="*" readonly onclick="valuebtn(this)">
-                
+
             </div>
 
 
@@ -42,7 +45,7 @@
                 <input type="text" value="5" readonly onclick="valuebtn(this)">
                 <input type="text" value="6" readonly onclick="valuebtn(this)">
                 <input type="text" id="subtract" value="-" readonly onclick="valuebtn(this)">
-                <!-- <input type="text" value="9" readonly onclick="valuebtn(this)"> -->
+            
             </div>
 
             <div class="btn">
@@ -51,12 +54,13 @@
                 <input type="text" value="1" readonly onclick="valuebtn(this)">
                 <input type="text" id="add" value="+" readonly onclick="valuebtn(this)">
             </div>
-            
+
             <div class="zero">
                 <input type="text" value="0" readonly onclick="valuebtn(this)">
             </div>
-        <div class="span">
-        <span style="color: aliceblue; ">Calculator</span></div>
+            <div class="span">
+                <span style="color: aliceblue; ">Calculator</span>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
