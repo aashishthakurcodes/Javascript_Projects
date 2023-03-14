@@ -1,0 +1,116 @@
+@font-face {
+    font-family: seven-segment;
+    src: url(./Seven\ Segment.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+    height: 98vh;
+    background: #000;
+}
+.heading1{
+    font-family: "seven-segment";
+}
+.container{
+    /* border: 3px solid rgb(0, 255, 0); */
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;  
+    align-items: center;  
+    background: #060505;
+    border-radius: 10px;
+    border: 3px solid white;
+    
+}
+.btn{
+   margin-top: 20px;
+    display: flex;
+    /* border: 2px solid rgb(255, 4, 251); */
+    justify-content: space-around; 
+ 
+}
+.btn >input{
+    width: 30px;
+    display: flex;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    background: gray;
+    color: #ffff;
+}
+.btn >input:hover{
+    background: #000;
+    color: #ffff;
+    cursor: pointer;
+    border: 2px solid red;
+    transform: scale(0.9);
+}
+#input_data{
+    width: 300px;
+    height: 60px;
+    font-size: 32px;
+    font-family: "seven-segment";
+    /* border: 3px solid blue; */
+    background: #928e8e;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0px 10px;
+    
+}
+.zero{
+    /* border: 6px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.zero>input{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    height: 20px;
+    font-size: 32px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background: gray;
+    color: #ffff;
+    cursor: pointer;
+}
+#clear,#equal,#percentage{
+    background: red;
+    color: aliceblue;
+    border: none;
+}
+#divide,#multiply,#add,#subtract{
+    background: #19b68f;
+    color: #ffff;
+    border: none;
+    
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    font-family: "seven-segment";
+    font-weight: 800;
+    letter-spacing: 10px;
+}

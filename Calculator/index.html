@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculatior</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <form class="calculator_form" name="calculator_form"> 
-            <div class="screen" >
-        <input type="text" name="screen">
-    </div>
+    <div class="main">
+        <h1 class="heading1" style="color: aliceblue;">Lets Calculate</h1>
+        <div class="container">
 
-    <div>
-        <input type="text" onclick="Clear()" readonly value="Clear">
-    </div>
+            <form class="calculator_form" name="calculator_form">
+                <div class="screen5">
+                    <input type="text" id="input_data" name="screen" value="">
+            </form>
+            <hr>
+           
+            <div class="btn">
+                <input type="text" id="clear" onclick="Clear()" readonly value="AC">
+                <input type="text" id="equal" value="=" readonly onclick="calculate(this)">
+                <input type="text" id="percentage" value="%" readonly onclick="valuebtn(this)">
+                <input type="text" id="divide" value="/" readonly onclick="valuebtn(this)">
+    
+            </div>
 
-    <div class="btn">
-       <input type="text" value="1" readonly onclick="valuebtn(this)">
-       <input type="text" value="2" readonly onclick="valuebtn(this)">
-       <input type="text" value="3" readonly onclick="valuebtn(this)">
-       <input type="text" value="4" readonly onclick="valuebtn(this)">
-       <input type="text" value="5" readonly onclick="valuebtn(this)">
-       <input type="text" value="6" readonly onclick="valuebtn(this)">
-       <input type="text" value="7" readonly onclick="valuebtn(this)">
-       <input type="text" value="8" readonly onclick="valuebtn(this)">
-       <input type="text" value="9" readonly onclick="valuebtn(this)">
-       <input type="text" value="+" readonly onclick="valuebtn(this)">
-       <input type="text" value="/" readonly onclick="valuebtn(this)">
-       <input type="text" value="-" readonly onclick="valuebtn(this)">
-       <input type="text" value="*" readonly onclick="valuebtn(this)">
-       <input type="text" value="Equal" readonly onclick="calculate(this)">
+            <div class="btn">
+                <input type="text" value="7" readonly onclick="valuebtn(this)">
+                <input type="text" value="8" readonly onclick="valuebtn(this)">
+                <input type="text" value="9" readonly onclick="valuebtn(this)">
+                <input type="text" id="multiply" value="*" readonly onclick="valuebtn(this)">
+                
+            </div>
+
+
+            <div class="btn">
+                <input type="text" value="4" readonly onclick="valuebtn(this)">
+                <input type="text" value="5" readonly onclick="valuebtn(this)">
+                <input type="text" value="6" readonly onclick="valuebtn(this)">
+                <input type="text" id="subtract" value="-" readonly onclick="valuebtn(this)">
+                <!-- <input type="text" value="9" readonly onclick="valuebtn(this)"> -->
+            </div>
+
+            <div class="btn">
+                <input type="text" value="3" readonly onclick="valuebtn(this)">
+                <input type="text" value="2" readonly onclick="valuebtn(this)">
+                <input type="text" value="1" readonly onclick="valuebtn(this)">
+                <input type="text" id="add" value="+" readonly onclick="valuebtn(this)">
+            </div>
+            
+            <div class="zero">
+                <input type="text" value="0" readonly onclick="valuebtn(this)">
+            </div>
+        <div class="span">
+        <span style="color: aliceblue; ">Calculator</span></div>
+        </div>
     </div>
-</form>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
