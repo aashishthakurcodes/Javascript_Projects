@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+.container{
+    display: flex;
+    border: 2px solid red;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper{
+    height: 500px;
+    width: 600px;
+    border: 3px solid blue;
+    
+}
+.month{
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weeks{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid greenyellow;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid pink;
+   align-items: center;
+   gap: 10px;
+   text-align: center;
+   height: 400px;
+   margin-left: 15px;
+   
+}
+.days div{
+    border: 3px solid green;
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+    
+    
+   
+}
