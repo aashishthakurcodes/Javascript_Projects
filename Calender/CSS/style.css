@@ -28,7 +28,7 @@
     justify-content: space-around;
     border: 2px solid greenyellow;
 }
-.days{
+#days{
     display: flex;
     flex-wrap: wrap;
     border: 3px solid pink;
@@ -39,7 +39,7 @@
    margin-left: 15px;
    
 }
-.days div{
+#days div{
     border: 3px solid green;
     width: 10%;
     padding: 5px;
@@ -47,4 +47,11 @@
     
     
    
+}
+.today{
+    background: green;
+    color: aliceblue;
+}
+.prev{
+    border: 2px solid red;
 }
