@@ -30,7 +30,7 @@ function renderdata(){
     let month_data = (document.getElementById("month-data").innerHTML =
       month[data.getMonth()]);
     
-    let date = (document.getElementById("date").innerHTML = data.toDateString());
+    let date = (document.getElementById("date").innerHTML = data.getFullYear());
     
     let today_date=new Date()
     console.log(today_date);
@@ -51,8 +51,34 @@ function renderdata(){
     let monthd = document.getElementById("days");
     monthd.innerHTML = month_div;
     monthd.appendChild(month_div);
+
+    
     
 }
+
+function display(){
+  let time=new Date();
+  let hours=time.getHours();
+  console.log(hours);
+  let minutes=time.getMinutes();
+  console.log(minutes);
+  let second=time.getSeconds();
+  console.log(second);
+  let session=document.getElementById("session")
+
+if(hours>=12){
+  document.getElementById("session").innerHTML="PM"
+}
+else{
+  document.getElementById("session").innerHTML="AM"
+}
+document.getElementById("hours").innerHTML=hours
+  document.getElementById("minutes").innerHTML=minutes
+  document.getElementById("second").innerHTML=second
+
+}
+setInterval(display,10)
+
 
 function movedata(val){
     if(val=='prev'){
@@ -63,3 +89,26 @@ function movedata(val){
     }
     renderdata()
 }
+
+let greeting=document.getElementById("heading");
+ let time=new Date();
+ let hours=time.getHours();
+
+ if(hours>=12 && hours<=16){
+  greeting.innerText="Good AfterNoon"
+}
+else if(hours>=16 && hours<=18){
+  greeting.innerText="Good Evening"
+}
+else if(hours>=18 && hours<=24){
+  greeting.innerText="Good Night";
+}
+else{
+  greeting.innerText="Good Moarning";
+}
+
+
+
+
+ 
+

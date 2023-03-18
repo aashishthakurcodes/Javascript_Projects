@@ -5,10 +5,12 @@
 }
 .container{
     display: flex;
+    flex-direction: column;
     border: 2px solid red;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
 }
 .wrapper{
@@ -20,8 +22,11 @@
 .month{
     border: 5px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    background: red;
+    padding: 15px;
+    color: #ffff;
 }
 .weeks{
     display: flex;
@@ -31,19 +36,22 @@
 #days{
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid pink;
-   align-items: center;
-   gap: 10px;
-   text-align: center;
-   height: 400px;
-   margin-left: 15px;
-   
+    border: 3px solid rgb(54, 230, 5);
+    gap: 12px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: auto;
+
 }
 #days div{
     border: 3px solid green;
     width: 10%;
     padding: 5px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
     
     
    
@@ -52,6 +60,23 @@
     background: green;
     color: aliceblue;
 }
-.prev{
-    border: 2px solid red;
+.prev,.next{
+    /* border: 2px solid red; */
+    border: none;
+    padding:5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffff;
+}
+.prev:hover,.next:hover{
+    transform: scale(0.9);
+    transition: all ease 1s;
+    background: rgba(0, 0, 0, 0.6);
+}
+.conatiner2{
+    color: #ffff;
+    font-size: 20px;
+    font-family: "Fira Code";
+    font-weight: 600;
 }

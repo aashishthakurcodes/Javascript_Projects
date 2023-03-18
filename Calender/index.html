@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Explora&family=Fira+Code:wght@300&family=Golos+Text:wght@500&family=Julee&family=Lobster&family=Raleway:wght@300&family=Roboto+Slab:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body onload="renderdata()">
     <div class="container">
+
+        <h3 id="newtime"></h3>
+    
         <div class="wrapper">
-            <div class="month">
-                <div class="prev" onclick="movedata('prev')"><h2><</h2></div>
-                <div>
-                    <h2 id="month-data"></h2>
-                    <span id="date"></span>
+        <div class="month">
+            <div class="prev" onclick="movedata('prev')">
+                <h2><span>&#8656</span></h2>
+            </div>
+            <div>
+                <h2 id="month-data"></h2>
+                <span id="date"></span>
+                <div class="conatiner2">
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="second">00</span>
+                    <span id="session">AM</span>
                 </div>
-                <div class="next" onclick="movedata('next')"><h2>></h2></div>
             </div>
-
-            <div class="weeks">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thr</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-
-            <div id="days">
-                
+            <div class="next" onclick="movedata('next')">
+                <h2><span>&#8658</span></h2>
             </div>
         </div>
 
+        <div class="weeks">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thr</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+
+
+        <div class="daysimonth">
+        <div id="days">
+
+
+        </div>
     </div>
+    </div>
+
+    </div>
+</div>
+
 </body>
 <script src="./Javascript/script.js"></script>
+
 </html>
