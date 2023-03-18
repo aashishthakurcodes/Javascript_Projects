@@ -1,3 +1,7 @@
+@font-face {
+    font-family: seven-segment;
+    src: url(./Seven\ Segment.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -6,7 +10,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -14,51 +18,81 @@
     
 }
 .wrapper{
-    height: 500px;
+    height: fit-content;
     width: 600px;
-    border: 3px solid blue;
+    /* border: 3px solid rgb(12, 12, 12); */
+    box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 8px;
     
 }
 .month{
-    border: 5px solid black;
+    border: 3px soid rgb(206, 199, 199);
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: red;
     padding: 15px;
     color: #ffff;
+    border-radius: 8px;
 }
 .weeks{
     display: flex;
     justify-content: space-around;
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(187, 188, 185);
+    height: 40px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Space Mono";
+    margin-top: 3px;
 }
 #days{
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid rgb(54, 230, 5);
+    /* border: 3px solid rgb(8, 19, 5); */
     gap: 12px;
-    /* justify-content: space-between; */
+    justify-content: flex-start;
     align-items: center;
-    margin: auto;
+    height: fit-content;
+    margin: 10px 0px;
+    
 
 }
+.days_month{
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid yellow; */
+    /* background: #b92020; */
+    
+}
 #days div{
-    border: 3px solid green;
-    width: 10%;
-    padding: 5px;
+    border: 3px solid rgb(235, 243, 235);
+    border-radius: 10px;
+    width: 6%;
+    padding: 11px;
     text-align: center;
     display: flex;
     justify-content: center;
     height: 30px;
-    align-items: center;
-    
-    
-   
+    align-items: center; 
+   /* background: #ffff; */
+    margin-left: 10.5px;
+    color: black;
+    cursor: pointer;
+    font-family: "Space Mono";
+    box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.80);
 }
+#days div:hover{
+    background: rgb(5, 149, 245);
+    color: rgb(245, 241, 241);
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: all ease 0.4s;
+    
+}
+
 .today{
-    background: green;
-    color: aliceblue;
+    background: rgb(241, 25, 18);
+    color: rgb(244, 249, 252);
 }
 .prev,.next{
     /* border: 2px solid red; */
@@ -66,7 +100,7 @@
     padding:5px 10px;
     border-radius: 50%;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #ffff;
 }
 .prev:hover,.next:hover{
@@ -79,4 +113,17 @@
     font-size: 20px;
     font-family: "Fira Code";
     font-weight: 600;
+}
+.prevData{
+    background: gray;
+}
+#month-data{
+    font-family: "Aboreto";
+}
+#date{
+    font-family: "seven-segment";
+    color: rgb(16, 16, 16);
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 5px;
 }
