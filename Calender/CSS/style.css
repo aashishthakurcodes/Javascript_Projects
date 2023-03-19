@@ -8,13 +8,7 @@
     box-sizing: content-box;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
     
     
 }
@@ -25,7 +19,7 @@
     box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.75);
     border-radius: 8px;
     border: 3px solid rgb(206, 199, 199);
-    margin-top: 40px;
+    
     
 }
 .month{
@@ -127,28 +121,42 @@
     font-size: 22px;
     letter-spacing: 5px;
 }
+.main{
+    border: 5px solid rgb(14, 14, 14);
+   min-height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Responsive */
 @media only screen and (max-width: 450px){
+    .main{
+      height: 100%;
+        align-items: center;
+        border: 2px solid greenyellow;
+      
+    }
     .container{
-        width: 500px;
-        height: 100vh;
+        width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* border: 8px solid green; */
-        padding: 20px 0px;
+        border: 8px solid green;
+        /* padding: 20px 0px; */
     }
     .wrapper{
-        margin-top: 40px;
-        width: 400px;
+        /* margin-top: 40px; */
+        width: 340px;
+        border: 5px solid red;
     }
    
     #days div{
         height: 20px;
         width: 4%;
         gap: 2px;
-        padding: 6px;
+        padding: 4px;
         border-radius: 0px;
     }
     .today{
@@ -159,11 +167,14 @@
         background: skyblue;
         color: black;
     }
+    
 }
 
 @media only screen and (min-width: 450px) and (max-width:800px){
+    
     .container{
         width: 650px;
+        
     }
     .wrapper{
         margin: 20px;
