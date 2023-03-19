@@ -11,22 +11,25 @@
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     
+    
 }
 .wrapper{
-    height: fit-content;
+     
     width: 600px;
     /* border: 3px solid rgb(12, 12, 12); */
     box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.75);
     border-radius: 8px;
+    border: 3px solid rgb(206, 199, 199);
+    margin-top: 40px;
     
 }
 .month{
-    border: 3px soid rgb(206, 199, 199);
+    border: 3px solid rgb(206, 199, 199);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +37,7 @@
     padding: 15px;
     color: #ffff;
     border-radius: 8px;
+    
 }
 .weeks{
     display: flex;
@@ -54,14 +58,11 @@
     align-items: center;
     height: fit-content;
     margin: 10px 0px;
-    
-
 }
 .days_month{
     display: flex;
     justify-content: center;
-    /* border: 5px solid yellow; */
-    /* background: #b92020; */
+    
     
 }
 #days div{
@@ -74,7 +75,6 @@
     justify-content: center;
     height: 30px;
     align-items: center; 
-   /* background: #ffff; */
     margin-left: 10.5px;
     color: black;
     cursor: pointer;
@@ -91,7 +91,7 @@
 }
 
 .today{
-    background: rgb(241, 25, 18);
+    background: rgb(238, 64, 6);
     color: rgb(244, 249, 252);
 }
 .prev,.next{
@@ -126,4 +126,70 @@
     font-weight: bolder;
     font-size: 22px;
     letter-spacing: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 450px){
+    .container{
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 8px solid green; */
+        padding: 20px 0px;
+    }
+    .wrapper{
+        margin-top: 40px;
+        width: 400px;
+    }
+   
+    #days div{
+        height: 20px;
+        width: 4%;
+        gap: 2px;
+        padding: 6px;
+        border-radius: 0px;
+    }
+    .today{
+        background: rgb(245, 75, 3);
+        color: paleturquoise;
+    }
+    .month{
+        background: skyblue;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width:800px){
+    .container{
+        width: 650px;
+    }
+    .wrapper{
+        margin: 20px;
+        width: 500px;
+    }
+    .month{
+        background: rgb(4, 232, 34);
+        color: black;
+    }
+    .today{
+        background: rgb(250, 16, 16);
+    }
+    #days{
+        background: #000;
+        padding: 5px 0px;
+        border: 2px solid #ffff;
+        
+    }
+    #days div{
+        color: #ffff;
+        height: 20px;
+        width: 5%;
+        gap: 2px;
+        padding: 9.5px;
+    }
+    .weeks{
+        border: 2px solid black;
+    }
 }
