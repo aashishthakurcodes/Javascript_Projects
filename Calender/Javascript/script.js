@@ -89,23 +89,29 @@ function movedata(val){
     }
     renderdata()
 }
-
-let greeting=document.getElementById("heading");
- let time=new Date();
- let hours=time.getHours();
-
- if(hours>=12 && hours<=16){
-  greeting.innerText="Good AfterNoon"
+let time=new Date()
+let hours=time.getHours();
+let x = prompt("Enter new value:");
+let user_name=document.getElementById("user_name");
+if (x === "") {
+    user_name.innerText=""
+} else if (x) {
+    if(hours>=12 && hours<=16){
+        user_name.innerText="Good After Noon " + x;
+    }
+    else if(hours>=16 && hours<=19){
+        user_name.innerText="Good Evening " +x;
+    }
+    else if(hours>=19 && hours<=24){
+        user_name.innerText="Good Night " +x;
+    }
+    else{
+        user_name.innerText="Good Moarning " +x;
+    }
+} else {
+   user_name.innerText=" Welcome Guys "
 }
-else if(hours>=16 && hours<=18){
-  greeting.innerText="Good Evening"
-}
-else if(hours>=18 && hours<=24){
-  greeting.innerText="Good Night";
-}
-else{
-  greeting.innerText="Good Moarning";
-}
+  
 
 
 

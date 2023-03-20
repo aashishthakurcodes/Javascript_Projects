@@ -8,9 +8,13 @@
     box-sizing: content-box;
 }
 .container{
-    
-    
-    
+        border: 5px solid rgb(14, 14, 14);
+        height: 95vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
 }
 .wrapper{
      
@@ -31,6 +35,7 @@
     padding: 15px;
     color: #ffff;
     border-radius: 8px;
+    text-align: center;
     
 }
 .weeks{
@@ -78,7 +83,7 @@
 #days div:hover{
     background: rgb(5, 149, 245);
     color: rgb(245, 241, 241);
-    border-radius: 50%;
+    border-radius: 40px;
     transform: scale(0.9);
     transition: all ease 0.4s;
     
@@ -112,7 +117,9 @@
     background: gray;
 }
 #month-data{
-    font-family: "Aboreto";
+    font-family: "Raleway";
+    color: #ffff;
+    font-weight: 800;
 }
 #date{
     font-family: "seven-segment";
@@ -121,30 +128,38 @@
     font-size: 22px;
     letter-spacing: 5px;
 }
-.main{
-    border: 5px solid rgb(14, 14, 14);
-   min-height: 98vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#hours,#minutes,#second{
+ color: #f8f3f3;
+ font-family: "seven-segment";
+ font-weight: bolder;
+ font-size: 20px;
+}
+#user_name{
+    font-size: 25px;
+    font-family: "Roboto Slab";
 }
 
+
 /* Responsive */
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 470px){
     .main{
-      height: 100%;
-        align-items: center;
-        border: 2px solid greenyellow;
-      
-    }
-    .container{
+       max-height: 85vh;
         width: 100%;
-        height: auto;
+        /* border: 5px solid black; */
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 8px solid green;
-        /* padding: 20px 0px; */
+        
+
+    }
+    .container{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 8px solid green; */
+        /* padding: 0px 20px; */
     }
     .wrapper{
         /* margin-top: 40px; */
