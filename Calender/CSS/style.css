@@ -63,9 +63,11 @@ body {
   margin-top: 3px;
   color: #131313;
   background: #ffff;
+  
 }
 
 #days {
+    padding: 10px 0px;
   display: flex;
   flex-wrap: wrap;
   /* border: 3px solid rgb(8, 19, 5); */
@@ -73,7 +75,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: fit-content;
-  margin: 10px 0px;
+  /* margin: 10px 0px; */
   background: #fff;
 }
 
@@ -85,12 +87,13 @@ body {
 #days div {
   border: 3px solid rgb(235, 243, 235);
   border-radius: 10px;
-  width: 6%;
+  width: 7%;
   padding: 11px;
   text-align: center;
   display: flex;
   justify-content: center;
   height: 30px;
+  font-size: 10px;
   align-items: center;
   margin-left: 10.5px;
   color: black;
@@ -221,14 +224,8 @@ body {
   }
 
   .month {
-    background-color: #4158d0;
-    background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #ffcc70 100%
-    );
-
+    background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
     color: black;
   }
 }

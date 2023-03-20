@@ -85,7 +85,7 @@ function movedata(val) {
 // Code for user greeting
 let time = new Date();
 let hours = time.getHours();
-let x = prompt("Enter new value:");
+let x = prompt("Enter your name ");
 let user_name = document.getElementById("user_name");
 if (x === "") {
   user_name.innerText = "";
