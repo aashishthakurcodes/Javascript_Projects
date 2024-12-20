@@ -11,19 +11,24 @@
             <div><h1>Task Manager</h1></div>
         </header>
         <div class="container">
-            <form action="">
+            <form action="" id="taskform">
                 <label>
-                    <input type="text" placeholder="Enter title"/>
+                    <input type="text"  id="title" placeholder="Enter title"/>
                 </label>
                 <label>
-                    <input type="text" placeholder="Enter description"/>
+                    <input type="text" id="desc" placeholder="Enter description"/>
                 </label>
                 <label>
-                    <input type="date" placeholder="Enter due date"/>
+                    <input type="date" id="duedate" placeholder="Enter due date"/>
                 </label>
+                <button type="submit">Submit</button>
             </form>
-            <button type="submit">Submit</button>
+            
+            <h2>Tasks</h2>
+        <div id="taskList"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
