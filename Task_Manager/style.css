@@ -124,3 +124,10 @@ label input {
         /* 1 column for small screens */
     }
 }
+
+@media (max-width: 400px) {
+    #taskList {
+        grid-template-columns: 1fr ;
+        /* 1 column for small screens */
+    }
+}
