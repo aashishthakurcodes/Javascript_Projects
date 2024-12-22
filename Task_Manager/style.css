@@ -10,11 +10,26 @@ header {
 }
 
 .main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background:
+    conic-gradient(at 10px calc(100% - 10px),#0000 270deg,#e6e6f0 0) calc(10px + 7.5px) 0,
+    linear-gradient(#a6a6ca 10px,#0000 0) 0 7.5px,
+    conic-gradient(at 10px calc(100% - 10px),#0000 90deg,#a6a6ca 0 180deg, #e6e6f0 0),
+    #ffd8d8;
+background-size: calc(2*(10px + 7.5px)) calc(2*(10px + 7.5px));
+
+}
+.formData{
+    border: 2px solid rgb(164, 163, 164);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.15);
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #e1d5d5 20px), repeating-linear-gradient(#e6e6f0, #e6e6f0);
+background-color: #e1d5d5;
 }
 
 .container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +38,9 @@ header {
 .container label {
     display: block;
     padding: 10px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: center;
+    padding: 20px;
 
 }
 
@@ -37,18 +53,18 @@ label input {
 }
 
 #taskList {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: grid;
     /* grid-auto-flow: column; */
     margin: 20px;
     grid-template-columns: 1fr 1fr  1fr;
-    background: plum;
+    /* background: plum; */
     /* grid-template-rows: 2fr 3fr; */
     /* width: 100%; */
 }
 
 .addedtask {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* display: grid;
     grid-auto-flow: column;
     grid-template-columns: 2fr 2fr; */
@@ -63,6 +79,7 @@ label input {
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.15);
     background: #fff;
     transition: background-color 0.3s ease, transform 0.2s ease; 
+    border: 2px solid rgb(164, 163, 164);
    
     
 
@@ -73,7 +90,11 @@ label input {
     transform: scale(1.1);
     
 }
-
+.taskNames{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;}
 .Heading {
     color: rgb(80, 82, 82);
     font-size: 25px;
@@ -97,6 +118,11 @@ label input {
     margin: 20px;
     /* border: 2px solid green; */
 }
+.taskHeading{
+    font-size: 25px;
+    margin: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;}
+
 
   button{
     /* align-content: center; */

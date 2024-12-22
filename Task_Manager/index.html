@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    
+
     <link rel="stylesheet" href="style.css">
+   
+
 </head>
+
 <body>
     <div class="main">
         <header>
-            <div><h1>Task Manager</h1></div>
+            <div class="taskHeading">
+                <h1>Task Manager</h1>
+            </div>
         </header>
         <div class="container">
+            <div class="formData">
             <form action="" id="taskform">
                 <label>
-                    <input type="text"  id="title" placeholder="Enter title" required/>
+                    <input type="text" id="title" placeholder="Enter title" required />
                 </label>
                 <label>
-                    <input type="text" id="desc" placeholder="Enter description" required/>
+                    <input type="text" id="desc" placeholder="Enter description" required />
                 </label>
                 <label>
-                    <input type="date" id="duedate" placeholder="Enter due date" required/>
+                    <input type="date" id="duedate" placeholder="Enter due date" required />
                 </label>
                 <label>
-                <button type="button" onclick="addTask()">Submit</button></label>
+                    <button type="button" onclick="addTask()">Submit</button></label>
             </form>
-            
-            
         </div>
 
-    </div>
-    <h2>Tasks</h2>
+        </div>
+
+    
+    <h2 class="taskNames">Tasks</h2>
     <div class="addedtask">
         <div id="taskList"></div>
     </div>
+</div>
     <script src="script.js"></script>
+   
 </body>
 
 </html>

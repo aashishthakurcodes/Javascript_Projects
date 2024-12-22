@@ -1,3 +1,5 @@
+
+
 function addTask() {
     const titleInput = document.querySelector('#title');
     const descInput = document.querySelector('#desc');
@@ -31,10 +33,14 @@ function addTask() {
     newTaskdesc.textContent = descValue;
     newTaskdate.textContent = dueDateValue;
 
+
+    
     // Clear input fields after adding the task
     titleInput.value = '';
     descInput.value = '';
     dueDateInput.value = '';
+
+   
 
     // Add delete and edit functionality
     deleteTask(newTask);
